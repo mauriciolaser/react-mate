@@ -8,19 +8,6 @@ import Instagram from './components/Instagram';
 import Newsletter from './components/Newsletter';
 import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App" style={{ backgroundColor: '#111111'}}>
-//       <Title />
-        
-      
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,8 +34,8 @@ export default class App extends React.Component {
     const isDesktop = this.state.isDesktop;
 
     return (
-      <div className="App"  >
-        <div className='Main' style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className="App">
+        <div className='Main' style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'blue' }}>
           <Title />
           {/*condicional para la pantalla*/}
           <div className='Multimedia'>
@@ -59,7 +46,7 @@ export default class App extends React.Component {
             ) : (
                 <div style={{ width: '100%', backgroundColor: '#111111' }}>
                 
-                  <BannerImage style={{ minHeight: 514, minWidth: 514 }} />
+                  <BannerImage style={{  }} />
               </div>
               )}
           </div>
