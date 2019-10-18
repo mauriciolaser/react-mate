@@ -35,7 +35,7 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        <div className='Main' style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'blue' }}>
+        <div className='Main' style={{ display: 'flex', flexDirection: 'column'}}>
           <Title />
           {/*condicional para la pantalla*/}
           <div className='Multimedia'>
@@ -50,10 +50,10 @@ export default class App extends React.Component {
               </div>
               )}
           </div>
-          <Description />
+          {/* <Description />
           <Info />
           <Instagram />
-          <Newsletter />
+          <Newsletter /> */}
         </div>
       </div>
     );
