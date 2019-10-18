@@ -35,7 +35,7 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        <div className='Main' style={{ display: 'flex', flexDirection: 'column'}}>
+        <div className='content-wrapper'>
           <Title />
           {/*condicional para la pantalla*/}
           <div className='Multimedia'>

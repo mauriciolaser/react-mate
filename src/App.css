@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 10vmin);
+  font-size: calc(10px + 2vmin);
   background-color: #111111;
 }
 
@@ -26,4 +26,6 @@
 .content-wrapper{
   width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
