@@ -38,7 +38,7 @@ export default class App extends React.Component {
         <div className='Main' style={{ display: 'flex', flexDirection: 'column'}}>
           <Title />
           {/*condicional para la pantalla*/}
-          <div className='Multimedia'>
+          {/* <div className='Multimedia'>
             {isDesktop ? (
               <div style={{ width: '100%', backgroundColor: '#111111' }}>
                 <BannerVideo />
@@ -49,7 +49,7 @@ export default class App extends React.Component {
                   <BannerImage style={{  }} />
               </div>
               )}
-          </div>
+          </div> */}
           {/* <Description />
           <Info />
           <Instagram />
