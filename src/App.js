@@ -52,7 +52,8 @@ export default class App extends React.Component {
           </div>
           <Description />
           <Info />
-          {/*<Instagram />
+          <Instagram />
+          {/*
           <Newsletter /> */}
         </div>
       </div>
