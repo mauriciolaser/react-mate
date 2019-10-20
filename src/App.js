@@ -51,9 +51,9 @@ export default class App extends React.Component {
               )}
           </div>
           <Description />
-          <Info />
+          {/* <Info />
           <Instagram />
-          <Newsletter />
+          <Newsletter /> */}
         </div>
       </div>
     );
