@@ -31,7 +31,7 @@ export default class Instagram extends React.Component {
                         <div className="insta-wrapper" style={{ backgroundColor: '#111111', width: '100%', flexWrap: 'wrap', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 {this.state.images.map((image) => { return(
                                     <div className='post-container' style={{ position: 'relative', minWidth: '110px', width: '23.5%', marginTop: 0, marginLeft: 0, marginRight: 0, marginBottom: 2}}>
-                                        <img style={{ flex: 1, height: '90%', width: '90%'}} src={image.images.standard_resolution.url}>
+                                        <img alt={image.images.id} style={{ flex: 1, height: '90%', width: '90%'}} src={image.images.standard_resolution.url}>
                                         </img>
                                     </div>
                                 ) }
