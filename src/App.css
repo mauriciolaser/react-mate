@@ -21,6 +21,7 @@
 
 .App-description{
   background-color: #111111;
+  font-size: calc(1em + 1vmin);
 }
 
 .content-wrapper{
