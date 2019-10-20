@@ -49,3 +49,11 @@
 .child-content{
   width: 100%;
 }
+
+.ig-image{
+  opacity: 1;
+}
+
+.ig-image:hover{
+  opacity: 0.5;
+}
