@@ -8,7 +8,7 @@ export default function BannerVideo() {
                 <div>
                     <Player
                         playsInline
-                        poster="/assets/banner.png"
+                        poster='../../assets/banner.jpg'
                         preload={'auto'}
                         autoPlay
                         loop 
