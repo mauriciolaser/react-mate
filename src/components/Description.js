@@ -9,7 +9,6 @@ export default function Description() {
     return (
         <div className='wrapper-child' >
             <div className='child-column'>
-    
                 <div className='child-content' >
                     <div className='content-text'>
                         <h3 style={{ flex: 1, padding: 10, whiteSpace: 'pre-line', fontWeight: 'bold'}}>
