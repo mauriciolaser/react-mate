@@ -1,3 +1,8 @@
+@font-face{
+  src: url('../src/fonts/Calibre-Regular.otf');
+  font-family: 'calibre';
+}
+
 .App {
   text-align: center;
   height: 100vh;
@@ -11,7 +16,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'calibre';
+  font-size: calc(13px + 2vmin);
   background-color: #111111;
 }
 
@@ -24,6 +30,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'calibre';
 }
 
 .wrapper-child{
