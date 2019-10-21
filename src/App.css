@@ -54,6 +54,29 @@
   opacity: 1;
 }
 
-.ig-image:hover{
-  opacity: 0.5;
+.post-container:hover .ig-overlay{
+  /* width: 100%; */
+  opacity: 0.7;
+  width: 90%;
+}
+
+.ig-overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eee;
+  height: 90%;
+  width: 0;
+  top: 0;
+  left: 0;
+
+}
+
+.ig-icon{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
 }

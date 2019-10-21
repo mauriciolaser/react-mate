@@ -30,9 +30,15 @@ export default class Instagram extends React.Component {
                     <div className='child-content'>
                         <div className="insta-wrapper" style={{ backgroundColor: '#111111', width: '100%', flexWrap: 'wrap', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 {this.state.images.map((image) => { return(
-                                    <div className='post-container' style={{ position: 'relative', minWidth: '120px', width: '23.5%', marginTop: 0, marginLeft: 0, marginRight: 0, marginBottom: 2}}>
+                                    <div className='post-container' style={{ position: 'relative', minWidth: '200px', width: '23.5%', marginTop: 0, marginLeft: 0, marginRight: 0, marginBottom: 2}}>
                                         <a href={image.link}>
-                                            <img className='ig-image' alt={image.images.id} style={{ flex: 1, height: '90%', width: '90%'}} src={image.images.standard_resolution.url} /></a>
+                                            <img className='ig-image' alt={image.images.id} style={{ display: 'block', flex: 1, height: '90%', width: '90%'}} src={image.images.standard_resolution.url} />
+                                    
+                                            <div className='ig-overlay'>
+                                                    <img className='ig-icon' src={process.env.PUBLIC_URL + '/assets/instagram.png'}>
+                                                    </img>
+                                            </div>
+                                        </a>
                                     </div>
                                 ) }
                                 )}
