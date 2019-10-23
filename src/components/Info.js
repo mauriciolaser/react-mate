@@ -40,7 +40,7 @@ export default function Info() {
         
                         </div>
                         <div className='info-imagen' style={{ display: 'flex', justifyContent:'center', flex: 1, minHeight: '300px', minWidth: '300px', width: '45%'}}>
-                            <img style={{paddingTop:15, width: '90%', height: '90%'}} alt='cuadrado' src={'https://format-com-cld-res.cloudinary.com/image/private/s--s-rdlOd9--/c_crop,h_776,w_776,x_0,y_0/c_fill,g_center,h_570,w_570/a_auto,fl_keep_iptc.progressive.apng/v1/0d5e06c9bb29470768de8884e488f6fb/Captura_de_pantalla_2019-10-10_a_las_4_34_16_p_m_.png'}>
+                            <img style={{ paddingTop: 15, width: '90%', height: '90%' }} alt='cuadrado' src={process.env.PUBLIC_URL + '/assets/gift.gif'}>
                             </img>
                         </div>
                     </div>
