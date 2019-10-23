@@ -40,7 +40,7 @@ export default function Info() {
         
                         </div>
                         <div className='info-imagen' style={{ display: 'flex', justifyContent:'center', flex: 1, minHeight: '300px', minWidth: '300px', width: '45%'}}>
-                            <img style={{ paddingTop: 15, width: '90%', height: '90%' }} alt='cuadrado' src={process.env.PUBLIC_URL + '/assets/gift.gif'}>
+                            <img style={{ paddingTop: 15, width: '90%', height: '90%' }} alt='Imagen de Tienda' src={process.env.PUBLIC_URL + '/assets/gift.gif'}>
                             </img>
                         </div>
                     </div>
