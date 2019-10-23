@@ -54,7 +54,7 @@ const CustomForm = () => (
         render={({ subscribe, status, message }) => (
                 <div className='newsletter-container' >
                     <div className='newsletter-form'>
-                        <div style={{marginBottom: '10px', fontSize: '24px'}}>
+                        <div className='newsletter-info' style={{marginBottom: '10px'}}>
                             Suscríbete a nuestra lista de correo.
                         </div>
                         <MyForm className='form-suscribe' onSubmitted={formData => subscribe(formData)} />

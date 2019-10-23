@@ -28,3 +28,7 @@
 .icon-link{
   color: white;
 }
+
+.newsletter-info{
+  font-size: calc(12px + 1vmin);
+}
