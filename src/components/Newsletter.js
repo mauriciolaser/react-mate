@@ -71,9 +71,9 @@ const CustomForm = () => (
 const MediaLinks = () => {
     return (
         <div style={{direction: 'flex', flexDirection: 'row', color: 'white'}}>
-            <InstagramIcon className='icon-newsletter'/>
+            <a href="https://www.instagram.com/bodega_mate/?hl=es"><InstagramIcon className='icon-newsletter'/></a>
                 
-            <FacebookIcon className='icon-newsletter'/>
+            <a href="https://www.facebook.com/pg/MuseoMATE/photos/?tab=album&album_id=330615733701705"><FacebookIcon className='icon-newsletter'/></a>
         </div>
     )
 }
