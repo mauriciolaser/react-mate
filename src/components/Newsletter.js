@@ -2,15 +2,14 @@ import React from 'react'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const url = "https://mate.us10.list-manage.com/subscribe/post?u=b52725410daab27470667d3cf&amp;id=05515d4824";
-const SimpleForm = () => <MailchimpSubscribe url={url} />
 
 export default function Newsletter() {
     
     return (
-        <div className='App-newsletter' style={{ width: '100%', backgroundColor: '#111111', display: 'flex', justifyContent: 'center' }}>
-            <CustomForm>
-                
-            </CustomForm>
+        <div className='wrapper-child'>
+            <div className='child-column' >
+                <CustomForm/>
+            </div>
         </div>
     )
 }
@@ -36,11 +35,10 @@ class MyForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>
-                    Email:
-          <input type="email" value={this.state.value} onChange={this.handleChange} />
+                <label style={{fontSize: 21}}>
+                    <input type="email" value={this.state.value} onChange={this.handleChange} style={{minWidth: '200px', margin: '5px'}} />
                 </label>
-                <input type="submit" value="Submit" />
+                    <input type="submit" value="Enviar" />
             </form>
         );
     }
@@ -50,12 +48,17 @@ const CustomForm = () => (
     <MailchimpSubscribe
         url={url}
         render={({ subscribe, status, message }) => (
-            <div>
-                <MyForm onSubmitted={formData => subscribe(formData)} />
-                {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-                {status === "error" && <div style={{ color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />}
-                {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
-            </div>
+                <div className='newsletter-container' >
+                    <div className='newsletter-form'>
+                        <div style={{marginBottom: '10px'}}>
+                            Suscríbete a nuestra lista de correo.
+                        </div>
+                        <MyForm className='form-suscribe' onSubmitted={formData => subscribe(formData)} />
+                        {status === "sending" && <div style={{ height: '40px', width: '50px', color: "blue" }}>sending...</div>}
+                        {status === "error" && <div style={{ height: '40px', width: '50px',color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />}
+                        {status === "success" && <div style={{ height: '40px', width: '50px',color: "green" }}>Subscribed !</div>}
+                    </div>
+                </div>
         )}
     />
 )

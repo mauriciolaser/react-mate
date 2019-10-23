@@ -1,0 +1,28 @@
+.insta-wrapper {
+  background-color: '#111111';
+  width: 100%;
+  height: auto;
+}
+
+.ig-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 12rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-image {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

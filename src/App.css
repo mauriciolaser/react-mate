@@ -47,43 +47,11 @@
   flex-direction: column;
   color: pink;
   max-width: 1100px;
-  width: 100%;
-  height: 100%;
   margin-top: 0;
   align-items: center;
+  flex: 1;
 }
 
 .child-content{
   width: 100%;
-}
-
-.ig-image{
-  opacity: 1;
-}
-
-.post-container:hover .ig-overlay{
-  /* width: 100%; */
-  opacity: 0.7;
-  width: 90%;
-}
-
-.ig-overlay{
-  position: absolute;
-  transition: all .3s ease;
-  opacity: 0;
-  background-color: #eee;
-  height: 90%;
-  width: 0;
-  top: 0;
-  left: 0;
-
-}
-
-.ig-icon{
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%)
 }

@@ -7,6 +7,8 @@ import Info from './components/Info';
 import Instagram from './components/Instagram';
 import Newsletter from './components/Newsletter';
 import './App.css';
+import './Instagram.css';
+import './Newsletter.css';
 
 export default class App extends React.Component {
   constructor(props) {

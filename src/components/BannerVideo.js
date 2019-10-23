@@ -15,7 +15,7 @@ export default function BannerVideo() {
                         muted
                         src="https://srv-file2.gofile.io/download/sRaCTL/mate.mp4">
                             <BigPlayButton disabled='true' />
-                            <ControlBar disableCompletely= 'true'/>
+                            <ControlBar disableCompletely= {true}/>
                     </Player>
                 </div>
    
